@@ -20,11 +20,11 @@ except:
 page_num = 0
 iteration = 1
 search_terms = ['microwave','computer','tv','microwaves','computers','tvs','laptops','laptop','motherboards','motherboard','pc','pcs','ps1','ps2','ps3','ps4','ps5','xbox','broken','tech','technology','floppy','stuff','item','items','lot','lots']
-webhookUrl = "https://discord.com/api/webhooks/869871950367965184/KlkQZ3kZWIvmlvIgXQHVIYNN-6dF5PyGdB0AM975ub41bO4mSWxiq4hm9NyrZnjDcp2K"
+webhookUrl = "webhook url"
 
 while(True):
     try:
-        x = requests.get("https://vancouver.craigslist.org/d/free-stuff/search/zip?s=0&postal=V6S1H6&search_distance=10")
+        x = requests.get("link")
         html_soup = BeautifulSoup(x.text, 'html.parser')
         results_num = html_soup.find('div', class_= 'search-legend')
         results_total = int(results_num.find('span', class_='totalcount').text) 
@@ -33,7 +33,7 @@ while(True):
         print("Something bad happened :(")
 
     for i in range(0,total_pages):
-        y = requests.get("https://vancouver.craigslist.org/d/free-stuff/search/zip?s="+str(page_num)+"&postal=V6S1H6&search_distance=10")
+        y = requests.get("link"+str(page_num)+"link")
         page_num += 120
         html_soup2 = BeautifulSoup(y.text, 'html.parser')
         posts2 = html_soup2.find_all('li', class_= 'result-row')
