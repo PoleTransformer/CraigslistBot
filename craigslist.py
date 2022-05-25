@@ -19,7 +19,7 @@ except:
     print("Empty list created")
 page_num = 0
 iteration = 1
-search_terms = ['microwave','computer','tv','microwaves','computers','tvs','laptops','laptop','motherboards','motherboard','pc','pcs','ps1','ps2','ps3','ps4','ps5','xbox','broken','tech','technology','floppy','stuff','item','items','lot','lots']
+search_terms = ['microwave','computer','tv','microwaves','computers','tvs','laptops','laptop','motherboards','motherboard','pc','pcs','ps1','ps2','ps3','ps4','ps5','xbox','broken','tech','technology','floppy','stuff','item','items','lot','lots','CPU','RAM','GPU']
 webhookUrl = "webhook url"
 
 while(True):
